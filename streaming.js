@@ -5,7 +5,9 @@ var path = require('path');
 
 var app = express();
 
-var PORT = process.env.PORT||3000;
+var PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080|| process.env.PORT||3000;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -50,6 +52,6 @@ app.get('/video', function (req,res) {
 });
 //process.env.PORT
 
-app.listen(PORT, function () {
-    console.log('Listening on port '+PORT);
+app.listen(PORT, server_ip_address, function () {
+    console.log('Listening on server '+server_ip_address+' on port '+PORT);
   })
