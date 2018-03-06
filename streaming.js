@@ -5,6 +5,8 @@ var path = require('path');
 
 var app = express();
 
+var PORT = process.env.port||3000;
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
@@ -48,6 +50,6 @@ app.get('/video', function (req,res) {
 });
 //process.env.PORT
 
-app.listen(3000, function () {
-    console.log('Listening on port 3000!')
+app.listen(PORT, function () {
+    console.log('Listening on port '+PORT);
   })

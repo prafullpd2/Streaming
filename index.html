@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Video stream sample</title>
+
   </head>
   <body>
     <video id="videoPlayer" width="90%" height="90%" controls>
@@ -10,5 +11,9 @@
     </video>
     <button id="toggleButton">Start/Stop</button>
     <script src="index.js"></script>
+    <script>
+        var videoPlayer = document.getElementById('videoPlayer');
+        videoPlayer = window.location.host+'/video'
+    </script>
   </body>
 </html>
