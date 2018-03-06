@@ -1,0 +1,33 @@
+{
+  "name": "streamimg",
+  "version": "1.0.0",
+  "description": "streamimg demo",
+  "main": "streaming.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "errorhandler": "^1.5.0",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "mustache": "^2.3.0",
+    "serve-favicon": "^2.4.5",
+    "stache": "^0.1.0",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node streamimg.js",
+    "start": "node streaming.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prafullpd2/Streaming.git"
+  },
+  "author": "Prafull",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prafullpd2/Streaming/issues"
+  },
+  "homepage": "https://github.com/prafullpd2/Streaming#readme"
+}
